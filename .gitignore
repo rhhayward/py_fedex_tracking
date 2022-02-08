@@ -1,4 +1,4 @@
 build/
 dist/
-load_modules.egg-info/
+*.egg-info/
 __pycache__/

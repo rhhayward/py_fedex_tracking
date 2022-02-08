@@ -48,7 +48,7 @@ class FedexTracker:
         package = res_json['output']['packages'][0]
         tracking_info = {
             'estDeliveryDateTime': package['estDeliveryDt'],
-            'status': "{} : {}".format(package['keyStatus'], package['mainStatus']),
+            'status': package['statusWithDetails'],
             'lastScanStatus': package['lastScanStatus'],
             'lastScanDateTime': package['lastScanDateTime'],
         }
